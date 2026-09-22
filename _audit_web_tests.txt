@@ -1,0 +1,50 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.1 [39m[90mD:/learning base system/sidcom/web[39m
+
+ [32m✓[39m src/test/lesson-player.test.tsx [2m([22m[2m1 test[22m[2m)[22m[33m 708[2mms[22m[39m
+   [32m✓[39m LessonPlayer Component [2m(1)[22m
+     [33m[2m✓[22m[39m renders concept card and allows stepping through to completion[33m 697[2mms[22m[39m
+[90mstderr[2m | src/test/auth-view.test.tsx[2m > [22m[2mAuthView Component[2m > [22m[2mrenders login form by default
+[22m[39mWarning: An update to AuthProvider inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AuthProvider (D:/learning base system/sidcom/web/src/services/auth-context.tsx:10:25)
+
+[90mstderr[2m | src/test/auth-view.test.tsx[2m > [22m[2mAuthView Component[2m > [22m[2mswitches to registration form on tab click
+[22m[39mWarning: An update to AuthProvider inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at AuthProvider (D:/learning base system/sidcom/web/src/services/auth-context.tsx:10:25)
+
+ [32m✓[39m src/test/auth-view.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[33m 409[2mms[22m[39m
+ [32m✓[39m src/test/dashboard.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[33m 758[2mms[22m[39m
+   [32m✓[39m Dashboard Component & 3-Tier Debt Gate [2m(3)[22m
+     [33m[2m✓[22m[39m renders normal dashboard when review debt is Tier 1 (Soft Reminder)[33m 528[2mms[22m[39m
+ [32m✓[39m src/test/review-player.test.tsx [2m([22m[2m1 test[22m[2m)[22m[33m 694[2mms[22m[39m
+   [32m✓[39m ReviewPlayer Component (Spaced Retrieval) [2m(1)[22m
+     [33m[2m✓[22m[39m renders flashcard front, reveals back on click, and advances through ratings to completion[33m 681[2mms[22m[39m
+ [32m✓[39m src/test/offline-queue.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 54[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m5 passed[39m[22m[90m (5)[39m
+[2m      Tests [22m [1m[32m11 passed[39m[22m[90m (11)[39m
+[2m   Start at [22m 23:22:56
+[2m   Duration [22m 18.81s[2m (environment 57%, tests 16%, setup 13%, import 8%, transform 5%, worker 1%)[22m
+
+[2mEnvironment [22m [33mjsdom was created 5 times[39m[2m · 9.46s total, 57% of tracked time[22m
+[2m            [22m [2mcreate it once per worker with [22m[33mpool: 'vmThreads'[39m[2m (keeps per-file isolation) or [22m[33misolate: false[39m[2m (shares it across files)[22m
+[2m            [22m [2mlearn more: https://vitest.dev/guide/improving-performance#test-environments[22m
+

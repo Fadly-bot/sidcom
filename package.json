@@ -1,0 +1,27 @@
+{
+  "name": "sidcom-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SIDCOM / Karsa Communication Learning Platform",
+  "workspaces": [
+    "backend",
+    "web"
+  ],
+  "scripts": {
+    "test:backend": "npm --prefix backend run test",
+    "build:backend": "npm --prefix backend run build",
+    "lint:backend": "npm --prefix backend run lint",
+    "typecheck:backend": "npm --prefix backend run typecheck",
+    "test:web": "npm --prefix web run test",
+    "build:web": "npm --prefix web run build",
+    "lint:web": "npm --prefix web run lint"
+  },
+  "keywords": [
+    "sidcom",
+    "karsa",
+    "communication",
+    "learning-platform"
+  ],
+  "author": "Karsa Team",
+  "license": "UNLICENSED"
+}

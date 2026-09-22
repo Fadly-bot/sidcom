@@ -1,0 +1,16 @@
+{
+  "name": "Karsa Communication Learning Platform",
+  "short_name": "Karsa",
+  "description": "Platform pembelajaran komunikasi deliberate practice 365 hari berbasis bukti",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
