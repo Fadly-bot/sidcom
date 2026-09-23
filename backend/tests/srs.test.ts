@@ -255,7 +255,7 @@ describe('Phase A.5: SRS & Review System Suite', () => {
       expect(res.body.debt.overdue_count).toBe(15);
       expect(res.body.debt.tier).toBe(3);
       expect(res.body.debt.hard_locked).toBe(true);
-      expect(res.body.debt.tier_name).toBe('CRITICAL_DEBT');
+      expect(res.body.debt.tier_name).toBe('TIER_3_HARD_LOCK');
     });
 
     it('should HARD LOCK daily lesson detail fetching when in Tier 3 Review Debt (403 Forbidden)', async () => {

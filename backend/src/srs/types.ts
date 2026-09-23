@@ -35,7 +35,7 @@ export interface ReviewDebtStatus {
   overdue_count: number;
   tier: ReviewDebtTier;
   hard_locked: boolean;
-  tier_name: 'NORMAL' | 'HEAVY_DEBT' | 'CRITICAL_DEBT';
+  tier_name: 'TIER_1_SOFT_REMINDER' | 'TIER_2_PRIORITIZED_GATE' | 'TIER_3_HARD_LOCK';
   message: string;
 }
 

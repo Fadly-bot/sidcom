@@ -134,7 +134,7 @@ describe('Phase A.10 Master Integration & Security Red Team Suite', () => {
         .set('Authorization', `Bearer ${token}`);
       expect(initialDash.status).toBe(200);
       expect(initialDash.body.active_streak).toBe(0);
-      expect(initialDash.body.review_debt_tier).toBe('NORMAL');
+      expect(initialDash.body.review_debt_tier).toBe('TIER_1_SOFT_REMINDER');
       expect(initialDash.body.today_lesson.day_number).toBe(1);
       expect(initialDash.body.today_lesson.state).toBe('AVAILABLE');
 
@@ -230,7 +230,7 @@ describe('Phase A.10 Master Integration & Security Red Team Suite', () => {
         const unlockedDash = await request(app)
           .get('/api/v1/users/me/dashboard')
           .set('Authorization', `Bearer ${token}`);
-        expect(unlockedDash.body.review_debt_tier).toBe('PRIORITIZED_GATE');
+        expect(unlockedDash.body.review_debt_tier).toBe('TIER_2_PRIORITIZED_GATE');
         expect(unlockedDash.body.due_reviews_count).toBe(9);
     });
   });

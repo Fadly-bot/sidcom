@@ -97,7 +97,7 @@ export class SrsService {
         overdue_count: overdueCount,
         tier: 1,
         hard_locked: false,
-        tier_name: 'NORMAL',
+        tier_name: 'TIER_1_SOFT_REMINDER',
         message:
           overdueCount === 0
             ? 'Ingatan prima! Tidak ada kartu review yang tertunda.'
@@ -110,7 +110,7 @@ export class SrsService {
         overdue_count: overdueCount,
         tier: 2,
         hard_locked: false,
-        tier_name: 'HEAVY_DEBT',
+        tier_name: 'TIER_2_PRIORITIZED_GATE',
         message: `Beban review tinggi (${overdueCount} kartu). Disarankan menyelesaikan review sebelum materi baru.`
       };
     }
@@ -119,7 +119,7 @@ export class SrsService {
       overdue_count: overdueCount,
       tier: 3,
       hard_locked: true,
-      tier_name: 'CRITICAL_DEBT',
+      tier_name: 'TIER_3_HARD_LOCK',
       message: `Hambatan Retensi Kritis (${overdueCount} kartu). Selesaikan 1 sesi review (5–8 kartu) untuk membuka kembali materi harian.`
     };
   }
